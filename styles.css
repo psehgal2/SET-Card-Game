@@ -1,0 +1,108 @@
+/*
+  NAME: Purvi Sehgal
+  DATE: 06/12/2023
+
+  This is the CSS File for the Set game which has the 
+  code for both the menu-view and the game-view
+ */
+
+body, button, select, input {
+  text-align: center;
+  font-size: 12pt;
+  font-family: Helvetica, Verdana, sans-serif;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
+button, select {
+  padding: 8px;
+  background-color: white;
+  border: 2pt solid black;
+}
+
+h2 {
+  text-decoration: underline;
+  font-size: 16pt;
+}
+
+#start-btn {
+  width: 100px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#menu-view > article {
+  background-color: #6F77ED;
+  border-radius: 0.35em;
+  border: 5pt solid black;
+}
+
+#details-bar {
+  background-color: black;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+#details-bar > p {
+  font-size: 14pt;
+}
+
+#details-bar > p, #menu-view > article {
+  color: white
+}
+
+.card {
+  width: 220px;
+  height: 95px;
+  border-width: 0.35em;
+  border-radius: 1em;
+  /* border: solid black; */
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.card, #back-btn, #refresh-btn {
+  cursor: pointer;
+}
+
+#details-bar, .card, #board {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#details-bar, .card {
+  align-items: center;
+}
+
+#board img {
+  height: 85%;
+}
+
+.selected {
+  box-shadow: 6px 6px #636363;
+}
+
+.card, #board {
+  border-style: solid;
+}
+
+.card > p {
+  font-weight: bold;
+  font-size: 16pt;
+  text-align: center;
+}
+
+#board {
+  border-left: 5pt solid black;
+  border-bottom: 5pt solid black;
+  border-right: 5pt solid black;
+  flex-wrap: wrap;  
+  padding: 20px;
+}
+
+.hidden, .hide-imgs img {
+  display: none;
+}
